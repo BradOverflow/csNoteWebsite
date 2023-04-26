@@ -1,0 +1,881 @@
+<hr>
+<h2 id="dg-publishtruepermalinkhometagsgardenentry">{&quot;dg-publish&quot;:true,&quot;permalink&quot;:&quot;/home/&quot;,&quot;tags&quot;:[&quot;gardenEntry&quot;]}</h2>
+<h1 id="unit-1---primitive-data-types">UNIT 1 - Primitive Data types</h1>
+<h4 id="data-types-can-be-either-primitive-or-reference">Data types can be either primitive or reference</h4>
+<ul>
+  <li>Doubles handle much more prescice numbers <ul>
+      <li>Booleans have two values </li>
+      <li>Ints have max num smaller than doubles only have specific num of bits </li>
+      <li>When variable is delaired final, its value cannot be changed</li>
+    </ul>
+  </li>
+</ul>
+<h3 id="casting">Casting</h3>
+<pre>
+		<code class="language-java">(int)varibleName
+(double)variableName
+//force implimentation 
+//This does not round, it truncates it 
+1.5(int) 
+//would be 1 
+</code>
+	</pre>
+<h2 id="arithmatic-only-used-with-int-and-double">Arithmatic: only used with int and double</h2>
+<ul>
+  <li>/ * % - <ul>
+      <li>if run operation an int, you get an int </li>
+      <li>if run operaiton on double , you get double </li>
+      <li>if an int is manipulated by double it is double </li>
+      <li>Modulus is remainder operaiton takes remainer of division </li>
+      <li>Shorthand <ul>
+          <li>Compound assignmnet operator </li>
+          <li>```</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<pre>
+		<code class="language-java">        += 
+        -=
+        /=
+        %=
+        ++
+</code>
+	</pre>
+<h1 id="unit-2---objects">UNIT 2 - Objects</h1>
+<h4 id="class-instantiation">Class Instantiation</h4>
+<ul>
+  <li>Instantiation is the process of creating an instance of a class.</li>
+  <li>Every object is created using the &quot;new&quot; keyword.</li>
+  <li>A constructor is a method with the same name as the class, used to initialize objects.</li>
+  <li>Constructors are overloaded when there are multiple constructors with the same name but different parameters.</li>
+  <li>&quot;null&quot; is a special value that indicates the absence of reference for data.</li>
+  <li>Parameters are usually specified in the header of the constructor.</li>
+</ul>
+<h4 id="types-of-methods">Types of Methods</h4>
+<ul>
+  <li>The behavior of objects is defined by methods.</li>
+  <li>The signature is the primary way of determining what a method does.</li>
+  <li>The following are some types of methods: <ul>
+      <li>Public</li>
+      <li>Static</li>
+      <li>Void</li>
+      <li>Int</li>
+      <li>Double</li>
+      <li>Boolean</li>
+      <li>String</li>
+    </ul>
+  </li>
+</ul>
+<h4 id="using-methods">Using Methods</h4>
+<ul>
+  <li>Methods are not usually sequential and are only executed when called.</li>
+  <li>To call a void method, you should not call it in a place where data would be used if it returned something.</li>
+  <li>To call a static method, you can call it without making an object for the class.</li>
+  <li>To call a non-static method, you should call it after making an object for the class.</li>
+</ul>
+<h4 id="strings-and-string-methods">Strings and String Methods</h4>
+<ul>
+  <li>
+    <p>The String method String(String str) is the best way to make a string.</p>
+  </li>
+  <li>
+    <p>String methods include: </p>
+    <ul>
+      <li>int length()</li>
+      <li>String substring(int from, int to) between 0.0 and 1.0</li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      <code>String substring(int from)</code>: Returns a new string that is a substring of this string, beginning at the specified index and extending to the end of the string.
+    </p>
+  </li>
+  <li>
+    <p>
+      <code>int indexOf(String str)</code>: Returns the index within this string of the first occurrence of the specified substring.
+    </p>
+  </li>
+  <li>
+    <p>
+      <code>boolean equals(String other)</code>: Compares this string to the specified object. Note: do not use <code>==</code> instead use this.
+    </p>
+  </li>
+  <li>
+    <p>
+      <code>int compareTo(String other)</code>: Compares two strings lexicographically. Compares two strings ascii code.
+    </p>
+  </li>
+</ul>
+<h5 id="wrapper-classes">Wrapper Classes</h5>
+<ul>
+  <li>Create and call <code>Integer</code> and <code>Double</code> methods: <ul>
+      <li>
+        <code>Integer(int value)</code>: Constructs a newly allocated Integer object that represents the specified int value.
+      </li>
+      <li>
+        <code>Integer.MIN_VALUE</code>: Returns the minimum value an Integer can have.
+      </li>
+      <li>Does not change value, just makes it an object.</li>
+    </ul>
+  </li>
+</ul>
+<h5 id="math-class">Math Class</h5>
+<ul>
+  <li>Only has static methods: <ul>
+      <li>
+        <code>int abs(int x)</code>: Returns the absolute value of an int value.
+      </li>
+      <li>
+        <code>double abs(double x)</code>: Returns the absolute value of a double value.
+      </li>
+      <li>
+        <code>double pow(double base, double exponent)</code>: Returns the value of the first argument raised to the power of the second argument.
+      </li>
+      <li>
+        <code>double sqrt(double x)</code>: Returns the correctly rounded positive square root of a double value.
+      </li>
+      <li>
+        <code>double random()</code>: Returns a pseudo-random double between 0.0 and 1.0.
+      </li>
+    </ul>
+  </li>
+</ul>
+<h1 id="unit-3---boolean-expressions">UNIT 3 - Boolean expressions</h1>
+<h5 id="when-working-with-evaluative-boolean-expressions-with-primitive-values-you-can-test-using-either">When working with evaluative boolean expressions with primitive values, you can test using either:</h5>
+<ul>
+  <li>== or != - The == operator checks to see if the references are the same.</li>
+  <li>The default .equals() method checks to see if the objects are logically equal.</li>
+  <li>Relational operators such as &lt;, &gt;, &lt;=, or &gt;=</li>
+</ul>
+<h4 id="conditional-statements-include">Conditional statements include:</h4>
+<ul>
+  <li>If statements - a conditional statement that interrupts the sequential flow </li>
+  <li>If else statements - a conditional statement that tests, then has a base case if it is false </li>
+  <li>Else if statements - tests a second or more cases after the original if statement</li>
+</ul>
+<h4 id="here-is-an-example-of-conditional-statements">Here is an example of conditional statements:</h4>
+<pre>
+		<code>if(condition){
+    cool code
+}
+elseif(condition){
+    cool code
+}
+else{
+    cool code
+}
+</code>
+	</pre>
+<h4 id="logical-operators--and--result-in-the-following-output">Logical operators <code>&amp;&amp;</code> and <code>||</code> result in the following output: </h4>
+<table>
+  <thead>
+    <tr>
+      <th>&amp;&amp;</th>
+      <th>T</th>
+      <th>F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td>T</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>F</td>
+      <td>F</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th>||</th>
+      <th>T</th>
+      <th>F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td>T</td>
+      <td>T</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>T</td>
+      <td>F</td>
+    </tr>
+  </tbody>
+</table>
+<h4 id="when-comparing-object-references-using-booleans">When comparing object references using booleans:</h4>
+<ul>
+  <li>Reference value can be compared with <code>==</code> or <code>!=</code>. </li>
+  <li>Classes normally have their own .equals method or the default.</li>
+</ul>
+<h4 id="differences">Differences</h4>
+<ul>
+  <li>
+    <ul>
+      <li>The == operator checks to see if the references are the same.</li>
+    </ul>
+  </li>
+  <li>The default .equals() method checks to see if the objects are logically equal.</li>
+</ul>
+<h1 id="unit-4---iteration">UNIT 4 - Iteration</h1>
+<h2 id="for---while-loops">For / While loops</h2>
+<h3 id="while">While</h3>
+<pre>
+		<code class="language-java">while(bool == true){
+//cool code stuff 
+}
+
+int i = 1;
+while(i &gt; 10){
+//cool code stuff 
+i++
+}
+</code>
+	</pre>
+<ul>
+  <li>Set of code that repeats certain number of times </li>
+  <li>Boolean expression is evaluated before each iteration of the loop body, including the first <ul>
+      <li>Infinite loop when the boolean will never be false</li>
+      <li>When there is a return statement within the loop, when it reaches it, the loop will be done</li>
+    </ul>
+  </li>
+</ul>
+<h3 id="for">For</h3>
+<pre>
+		<code class="language-java">for(int i = 0; i &lt; lengthOfSum.length(); i++){
+//cool code stuff
+}
+</code>
+	</pre>
+<ul>
+  <li>In for loop initalization statement is only executed once before the first boolean evaluation </li>
+  <li>In each iteration of a for loop the increment statement is executed after the entire loop body is executed and before the bolean statement </li>
+  <li>Many standard algorithms for string traversals</li>
+</ul>
+<h3 id="nested-iteration">Nested iteration</h3>
+<pre>
+		<code class="language-java">for(int i = 0; i &gt; 10; i++){
+    for(int i = 0; i &gt; 20; i++){
+    //cool code stuff
+    }
+}
+</code>
+	</pre>
+<p>Very popular for 2d arrays will repeat statement inside of first loop until it is finished, then go again </p>
+<h1 id="unit-5---classes">UNIT 5 - Classes</h1>
+<h4 id="details">Details</h4>
+<ul>
+  <li>Always public <ul>
+      <li>though things inside that class can be private.</li>
+    </ul>
+  </li>
+  <li>Access to attributes should be kept internal to the class. Therefore, instance variables are designated as private.</li>
+  <li>Constructors are designated as public</li>
+  <li>Data encapsulation is a technique in which the implementation details of a class are kept hidden from the user</li>
+  <li>When designing a class, programmers make decisions about what data to make accessible and modifiable from an external class. Data can be either accessible or modifiable, both, or neither.</li>
+  <li>INstance variables are encapsulated by using the private access modifier.</li>
+  <li>The provided accessor and mutator methods in a class allow client code and modify datai</li>
+</ul>
+<pre>
+		<code class="language-java">public class Person {
+    private String name;
+    private int age;
+    
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+</code>
+	</pre>
+<h4 id="constructors">CONSTRUCTORS:</h4>
+<ul>
+  <li>An object’s state refers to its attributes and values at a given time ind is defined by instance variables belonging to the object. This creates a “has-a” relationship between the object and instance variables.</li>
+  <li>Constructors are used to set the initial state of an object, which should include vital initial values for all instance variables</li>
+  <li>Constructor parameters are local variables to the constructor and provide data to initialize instance variables</li>
+</ul>
+<h4 id="acessor-methods">ACESSOR METHODS:</h4>
+<ul>
+  <li>An accessor method allows other objects to obtain the value of instance variables or static variables</li>
+  <li>a non-void method returns a single value. Its header include the return type in place of the keyword void</li>
+</ul>
+<pre>
+		<code class="language-java">public class BankAccount {
+    private double balance;
+    
+    public double getBalance() {
+        return balance;
+    }
+}
+</code>
+	</pre>
+<h4 id="tostring-method">toString METHOD:</h4>
+<ul>
+  <li>The toString method is an overridden method that is included in the class to provide a description of a specific object. It generally includes what values are stored in the instance data of the objects.</li>
+</ul>
+<pre>
+		<code class="language-java">public class Car {
+    private String make;
+    private String model;
+    
+    @Override
+    public String toString() {
+        return make + &quot; &quot; + model;
+    }
+}
+</code>
+	</pre>
+<h4 id="mutator-methods">MUTATOR METHODS:</h4>
+<ul>
+  <li>A void method that does not return a value, but changes values of instance or static variables</li>
+</ul>
+<pre>
+		<code class="language-java">public class Rectangle {
+    private int length;
+    private int width;
+    
+    public void setLength(int length) {
+        this.length = length;
+    }
+}
+</code>
+	</pre>
+<h4 id="methods">METHODS:</h4>
+<ul>
+  <li>Methods can only access the private data and methods of a parameter that is a reference to an object when the parameter is the same type as the method’s closing class</li>
+  <li>Non-void methods with parameters review values through parameters, use those values, and return a computed value of the specified type.</li>
+  <li>It is good programming practice to not modify mutable objects that are passed as parameters unless required in the specification</li>
+  <li>When an actual parameter is a primitive value, the formal parameter is initialized with a copy of that value. Changes to the formal parameter have no effect on the corresponding actual parameter.</li>
+</ul>
+<pre>
+		<code class="language-java">public class MathHelper {
+    public static int sum(int a, int b) {
+        return a + b;
+    }
+}
+</code>
+	</pre>
+<h4 id="static-methods">STATIC METHODS:</h4>
+<ul>
+  <li>are associated with the class, not objects of the class.</li>
+  <li>include the keyword statc in the header before the method name.</li>
+  <li>cannot access or changed the values of instance variables.</li>
+  <li>an access or change the values of static variables</li>
+</ul>
+<pre>
+		<code class="language-java">public class Counter {
+    private static int count = 0;
+    
+    public static void incrementCount() {
+        count++;
+    }
+}
+</code>
+	</pre>
+<h1 id="unit-6---arrays">UNIT 6 - Arrays</h1>
+<h2 id="data-collection-with-similar-information">Data collection with similar information</h2>
+<p>An array allows multiple related items to be represented using a single variable </p>
+<p>An array is created using the keyword &quot;new&quot; because it is an object</p>
+<pre>
+		<code class="language-java">int arr[] = new int[10];
+</code>
+	</pre>
+<p>Valid index values are 0 - one less than number of elements in array Anything else will get you out of bounds errors </p>
+<h2 id="traversing-the-array">Traversing the array</h2>
+<p>Iteration statements can be used to access all of the elements in a array. This is called travering the array.</p>
+<pre>
+		<code class="language-java">int[] numbers = {2, 4, 6, 8, 10};
+
+for (int i = 0; i &lt; numbers.length; i++) {
+    System.out.println(numbers[i]);
+}
+</code>
+	</pre>
+<h2 id="enhanced-for-loops">Enhanced for loops</h2>
+<pre>
+		<code class="language-java">int[] numbers = {2, 4, 6, 8, 10};
+
+for (int number : numbers) {
+    System.out.println(number);
+}
+</code>
+	</pre>
+<ul>
+  <li>Header includes a variable (i) </li>
+  <li>for each iteration, the enhanced for loop is assigned a copy of an element without using its index </li>
+  <li>asiging a new value to the enhanced for loop variable does not change the value in the array</li>
+</ul>
+<h2 id="sorting">Sorting</h2>
+<ul>
+  <li>Standard algorithms utilize array traversals to <ul>
+      <li>Determie minimum or max vallue </li>
+      <li>compute sum average or mode </li>
+      <li>ext...</li>
+      <li>Shift or rotate elements </li>
+      <li>determine number of elements meeting criteria </li>
+      <li>ext...</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="selecion-sort">Selecion sort:</h4>
+  </li>
+</ul>
+<pre>
+		<code class="language-java">
+public static void selectionSort(int[] arr) {
+    // Loop through the array from the beginning to the second-to-last element
+    for (int i = 0; i &lt; arr.length - 1; i++) {
+        // Assume the current index is the minimum
+        int minIdx = i;
+        // Loop through the unsorted part of the array to find the true minimum
+        for (int j = i + 1; j &lt; arr.length; j++) {
+            // If the current element is smaller than the current minimum, update the minimum index
+            if (arr[j] &lt; arr[minIdx]) {
+                minIdx = j;
+            }
+        }
+        // Swap the current element with the minimum element
+        int temp = arr[minIdx];
+        arr[minIdx] = arr[i];
+        arr[i] = temp;
+    }
+}
+</code>
+	</pre>
+<h1 id="unit-7---arraylists">UNIT 7 - ArrayLists</h1>
+<h3 id="general-info">General info</h3>
+<ul>
+  <li>An arraylist is completly mutable and can only contain object refrences </li>
+  <li>The arraylist constructor creates an empty list </li>
+  <li>When the arraylist is specified you put in the data type</li>
+</ul>
+<pre>
+		<code class="language-java"> ArrayList&lt;String&gt; myArrayList = new ArrayList&lt;String&gt;();
+</code>
+	</pre>
+<h3 id="methods-1">Methods</h3>
+<ul>
+  <li>int size() <ul>
+      <li>Returns number of elements in list</li>
+    </ul>
+  </li>
+  <li>boolean add(E obj) <ul>
+      <li>Appends object to end of list, returns true</li>
+    </ul>
+  </li>
+  <li>void add(int index, e object) <ul>
+      <li>inserts obj at position index moving elements to the right</li>
+    </ul>
+  </li>
+  <li>E get (int index) <ul>
+      <li>Returns element at position index in the list</li>
+    </ul>
+  </li>
+  <li>E set (int index, E obj) <ul>
+      <li>Replaces element at index</li>
+    </ul>
+  </li>
+  <li>E remove( int index) <ul>
+      <li>removes element from index, moving everything to right</li>
+    </ul>
+  </li>
+</ul>
+<pre>
+		<code class="language-java">    // Adding elements to the ArrayList
+    myArrayList.add(&quot;apple&quot;);
+    myArrayList.add(&quot;banana&quot;);
+    myArrayList.add(&quot;orange&quot;);
+
+    // Accessing elements in the ArrayList
+    System.out.println(&quot;First element: &quot; + myArrayList.get(0));
+    System.out.println(&quot;Second element: &quot; + myArrayList.get(1));
+    System.out.println(&quot;Third element: &quot; + myArrayList.get(2));
+    
+// Iterating over the ArrayList using a for loop
+    System.out.println(&quot;All elements:&quot;);
+    for (int i = 0; i &lt; myArrayList.size(); i++) {
+      System.out.println(myArrayList.get(i));
+    }
+
+    // Removing an element from the ArrayList
+    myArrayList.remove(1);
+
+    // Checking the size of the ArrayList
+    System.out.println(&quot;Size of ArrayList after removing an element: &quot; + myArrayList.size());
+
+    // Clearing the ArrayList
+    myArrayList.clear();
+
+    // Checking the size of the ArrayList after clearing it
+    System.out.println(&quot;Size of ArrayList after clearing it: &quot; + myArrayList.size());
+  }
+}
+</code>
+	</pre>
+<h4 id="traversing">Traversing</h4>
+<ul>
+  <li>Iteration statements can be used to access all elements and traverse array list </li>
+  <li>Deleting elements during a traversal requirs using special tequniques to avoid skipping elements </li>
+  <li>The indicies for an ArrayList start at 0 and end at the .Size() - 1 accesing index value out of the range will result in an out of bounds exeption</li>
+</ul>
+<h4 id="searching--sorting">Searching / sorting</h4>
+<ul>
+  <li>Standard algorithms for searching arraylists <ul>
+      <li>Sequential</li>
+    </ul>
+  </li>
+  <li>Seleciton sort and insertion sort are iterative sorting algorithms that could be used to sort elements in an ArrayList</li>
+</ul>
+<pre>
+		<code class="language-java">    ArrayList&lt;Integer&gt; myList = new ArrayList&lt;&gt;(Arrays.asList(1, 3, 5, 7, 9));
+
+    int index = Collections.binarySearch(myList, 5);
+
+    if (index &gt;= 0) {
+      System.out.println(&quot;Element found at index: &quot; + index);
+    } else {
+      System.out.println(&quot;Element not found&quot;);
+    }
+  }
+</code>
+	</pre>
+<h1 id="unit-8---2d-arrays">UNIT 8 - 2D arrays</h1>
+<h4 id="general-info-1">General info:</h4>
+<ul>
+  <li>2D arrays are stored as arrays of arrays. Therefore, the way 2D arrays are created and indexed is similar to 1D array objects.</li>
+</ul>
+<pre>
+		<code class="language-java">int[][] = new int [3][6];
+</code>
+	</pre>
+<h4 id="traversing-an-array">Traversing an array</h4>
+<ul>
+  <li>nested iteration statements are used to traverse and access 2d elements</li>
+</ul>
+<pre>
+		<code class="language-java">int[][] matrix = {{1, 2, 3},
+                  {4, 5, 6},
+                  {7, 8, 9}};
+
+// Traverse the matrix row by row
+for (int i = 0; i &lt; matrix.length; i++) {
+    for (int j = 0; j &lt; matrix[0].length; j++) {
+        System.out.print(matrix[i][j] + &quot; &quot;);
+    }
+    System.out.println();
+}
+</code>
+	</pre>
+<ul>
+  <li>When applying search algorithms to 2d arrays, each row mush be acessed then have the sequential or linear search applied to each row</li>
+</ul>
+<pre>
+		<code class="language-java">    public static int[] linearSearch(int[][] matrix, int target) {
+        int numRows = matrix.length;
+        int numCols = matrix[0].length;
+
+        for (int i = 0; i &lt; numRows; i++) {
+            for (int j = 0; j &lt; numCols; j++) {
+                if (matrix[i][j] == target) {
+                    int[] result = {i, j};
+                    return result;
+                }
+            }
+        }
+
+        return null; // target not found
+    }
+</code>
+	</pre>
+<h1 id="unit-9---inheritance">UNIT 9 - Inheritance</h1>
+<h4 id="class-hierarchy">Class hierarchy</h4>
+<ul>
+  <li>developed by having common attributes and behaviors of the related classes in a single class by a superclass </li>
+  <li>Classes that extend a superclass, are called sublasses and can drap upon the existing attributes and behaviors </li>
+  <li></li>
+</ul>
+<pre>
+		<code class="language-java">class Vehicle {
+    private String brand;
+    private int year;
+
+    public Vehicle(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void accelerate() {
+        System.out.println(&quot;Vehicle is accelerating&quot;);
+    }
+}
+
+// This is the subclass
+class Car extends Vehicle {
+    private int numDoors;
+
+    public Car(String brand, int year, int numDoors) {
+        super(brand, year);
+        this.numDoors = numDoors;
+    }
+
+    public int getNumDoors() {
+        return numDoors;
+    }
+
+    public void honk() {
+        System.out.println(&quot;Car is honking&quot;);
+    }
+}
+
+// This is the main method that creates objects of the classes and calls their methods
+public class Main {
+    public static void main(String[] args) {
+        Vehicle vehicle = new Vehicle(&quot;Toyota&quot;, 2021);
+        Car car = new Car(&quot;Honda&quot;, 2022, 4);
+
+        System.out.println(vehicle.getBrand()); // Toyota
+        System.out.println(car.getBrand()); // Honda
+        System.out.println(car.getNumDoors()); // 4
+
+        vehicle.accelerate(); // Vehicle is accelerating
+        car.accelerate(); // Vehicle is accelerating
+        car.honk(); // Car is honking
+    }
+}
+</code>
+	</pre>
+<h4 id="method-overriding">Method overriding</h4>
+<ul>
+  <li>Multiple classes contain comon attributes and behaavoirs</li>
+  <li>Proogrammerrs create new classes containing the behavoirs forming a heirarchy</li>
+  <li>Method overriding occurs when a public method in a subclass has the same method signitre as a public method in the superclass</li>
+</ul>
+<pre>
+		<code class="language-java">// This is the superclass
+class Animal {
+    public void speak() {
+        System.out.println(&quot;An animal speaks&quot;);
+    }
+}
+
+// This is the subclass
+class Dog extends Animal {
+    public void speak() {
+        System.out.println(&quot;A dog barks&quot;);
+    }
+}
+
+// This is the main method
+public class Main {
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        Dog dog = new Dog();
+
+        animal.speak(); // An animal speaks
+        dog.speak(); // A dog barks
+    }
+}
+</code>
+	</pre>
+<h4 id="super-keyword">&quot;Super&quot; keyword</h4>
+<ul>
+  <li>used to call a superclasses constructors and methods </li>
+  <li>superclass methdod is called imn a subclass by using the keyword super followed by the method name and paassing the appropriate parameters</li>
+</ul>
+<pre>
+		<code class="language-java">// This is the superclass
+class Animal {
+   public Animal() {
+       System.out.println(&quot;An animal is created&quot;);
+   }
+}
+
+// This is the subclass
+class Dog extends Animal {
+   public Dog() {
+       super(); // call the constructor of the superclass
+       System.out.println(&quot;A dog is created&quot;);
+   }
+}
+
+// This is the main method
+public class Main {
+   public static void main(String[] args) {
+       Dog dog = new Dog();
+   }
+}
+</code>
+	</pre>
+<h4 id="polymorphism">Polymorphism</h4>
+<p>definition - it can change into any different implimentation </p>
+<pre>
+		<code class="language-java">// This is the superclass
+class Animal {
+    public void makeSound() {
+        System.out.println(&quot;An animal makes a sound&quot;);
+    }
+}
+
+// This is the subclass
+class Dog extends Animal {
+    public void makeSound() {
+        System.out.println(&quot;A dog barks&quot;);
+    }
+}
+
+// This is another subclass
+class Cat extends Animal {
+    public void makeSound() {
+        System.out.println(&quot;A cat meows&quot;);
+    }
+}
+
+// This is the main method
+public class Main {
+    public static void main(String[] args) {
+        Animal animal1 = new Dog();
+        Animal animal2 = new Cat();
+
+        animal1.makeSound(); // A dog barks
+        animal2.makeSound(); // A cat meows
+    }
+}
+</code>
+	</pre>
+<p>In the <code>Main</code> class, we create objects of the <code>Dog</code> and <code>Cat</code> classes and assign them to variables of type <code>Animal</code>. This is possible because both <code>Dog</code> and <code>Cat</code> are subclasses of <code>Animal</code>. We then call the <code>makeSound()</code> method on both objects. Since both <code>Dog</code> and <code>Cat</code> override the <code>makeSound()</code> method of the <code>Animal</code> class, the actual behavior that we see when we call <code>makeSound()</code> depends on the specific subclass instance that we&#39;re calling it on. This is an example of polymorphism, where different objects of the same class hierarchy can have different behavior. </p>
+<h4 id="java-cosmic-superclass">Java COSMIC Superclass</h4>
+<h5 id="object-class">Object class</h5>
+<ul>
+  <li>the superclass to everything in java </li>
+  <li>comes with a few methods (can be customized)</li>
+</ul>
+<pre>
+		<code class="language-java">boolean equals(Object other);
+String toString();
+</code>
+	</pre>
+<h1 id="unit-10---recursion">UNIT 10 - Recursion</h1>
+<h4 id="general-info-2">General info</h4>
+<ul>
+  <li>Method that calls itself </li>
+  <li>Contains atleast one base case that halts the recursion </li>
+  <li>For every recursive method, there is an equivilant interation solution to the problem <code>note: writing recursive methods are out of the scope of the AP exam</code>
+  </li>
+</ul>
+<h4 id="recursive-searching-and-sorting">Recursive searching and sorting</h4>
+<ul>
+  <li>Bianary search starts at the middle of the sorted array and eliminates half of the array until the desired value is found</li>
+</ul>
+<pre>
+		<code class="language-java">public class BinarySearch {
+
+    public static int binarySearch(int[] arr, int target, int left, int right) {
+        if (left &gt; right) {
+            return -1; // target not found
+        }
+        
+        int mid = (left + right) / 2;
+        if (arr[mid] == target) {
+            return mid; // target found at index mid
+        } else if (arr[mid] &gt; target) {
+            return binarySearch(arr, target, left, mid - 1); // search in left half
+        } else {
+            return binarySearch(arr, target, mid + 1, right); // search in right half
+        }
+    }
+    
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int target = 7;
+        int index = binarySearch(arr, target, 0, arr.length - 1);
+        if (index != -1) {
+            System.out.println(&quot;Target found at index &quot; + index);
+        } else {
+            System.out.println(&quot;Target not found&quot;);
+        }
+    }
+}
+</code>
+	</pre>
+<ul>
+  <li>Merge sort is a recursive sorting algorithm that works by dividing an array into two halves, sorting each half separately, and then merging the two sorted halves back together</li>
+</ul>
+<pre>
+		<code class="language-java">public class MergeSort {
+    
+    public static void mergeSort(int[] arr, int left, int right) {
+        if (left &lt; right) {
+            int mid = (left + right) / 2;
+            mergeSort(arr, left, mid); // sort left half
+            mergeSort(arr, mid + 1, right); // sort right half
+            merge(arr, left, mid, right); // merge two halves
+        }
+    }
+    
+    public static void merge(int[] arr, int left, int mid, int right) {
+        // create temporary arrays to hold the left and right halves
+        int[] leftArr = new int[mid - left + 1];
+        int[] rightArr = new int[right - mid];
+        
+        // copy elements from arr to the temporary arrays
+        for (int i = 0; i &lt; leftArr.length; i++) {
+            leftArr[i] = arr[left + i];
+        }
+        for (int i = 0; i &lt; rightArr.length; i++) {
+            rightArr[i] = arr[mid + 1 + i];
+        }
+        
+        // merge the two halves back into arr
+        int i = 0;
+        int j = 0;
+        int k = left;
+        while (i &lt; leftArr.length &amp;&amp; j &lt; rightArr.length) {
+            if (leftArr[i] &lt;= rightArr[j]) {
+                arr[k] = leftArr[i];
+                i++;
+            } else {
+                arr[k] = rightArr[j];
+                j++;
+            }
+            k++;
+        }
+        
+        // copy any remaining elements from leftArr and rightArr to arr
+        while (i &lt; leftArr.length) {
+            arr[k] = leftArr[i];
+            i++;
+            k++;
+        }
+        while (j &lt; rightArr.length) {
+            arr[k] = rightArr[j];
+            j++;
+            k++;
+        }
+    }
+    
+    public static void main(String[] args) {
+        int[] arr = {5, 2, 4, 7, 1, 3, 2, 6};
+        mergeSort(arr, 0, arr.length - 1);
+        for (int i : arr) {
+            System.out.print(i + &quot; &quot;);
+        }
+    }
+}
+</code>
+	</pre>
